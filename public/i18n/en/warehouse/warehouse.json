@@ -1,0 +1,18 @@
+{
+  "warehouse": {
+    "title": "Warehouse Management",
+    "code": "Warehouse Code",
+    "name": "Warehouse Name",
+    "address": "Address",
+    "manager": "Manager / Keeper",
+    "capacity": "Capacity (m³)",
+    "status": "Status",
+    "statusActive": "Active",
+    "statusInactive": "Inactive",
+    "statusFull": "Full",
+    "addWarehouse": "Add Warehouse",
+    "editWarehouse": "Edit Warehouse",
+    "deleteWarehouse": "Delete Warehouse",
+    "searchPlaceholder": "Search by code, name, address..."
+  }
+}

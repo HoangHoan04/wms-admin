@@ -1,0 +1,73 @@
+﻿{
+  "home": {
+    "greetingMorning": "Chào buổi sáng",
+    "greetingAfternoon": "Chào buổi chiều",
+    "greetingEvening": "Chào buổi tối",
+    "title": "Trang chủ nhân sự",
+    "dateRangeLabel": "Khoảng thời gian",
+    "fromDate": "Từ ngày",
+    "toDate": "Đến ngày",
+    "loadFailed": "Không tải được dashboard",
+
+    "kpiTotalEmployees": "Tổng nhân viên",
+    "kpiFemale": "Nhân viên nữ",
+    "kpiMale": "Nhân viên nam",
+    "kpiNewHires": "Tuyển mới trong kỳ",
+    "kpiActiveHint": "Đang hoạt động",
+    "kpiPercentOfTotal": "{{percent}}% tổng số",
+    "kpiPrevPeriod": "Kỳ trước: {{count}}",
+
+    "pendingTitle": "Việc cần xử lý",
+    "pendingSubtitle": "Các yêu cầu đang chờ duyệt",
+    "pendingLeave": "Đơn nghỉ phép",
+    "pendingComplaint": "Khiếu nại CC",
+    "pendingTransfer": "Điều chuyển",
+    "pendingReview": "Xét duyệt HĐ",
+
+    "contractTitle": "Hợp đồng",
+    "contractSubtitle": "Trạng thái hợp đồng hiện tại",
+    "contractActive": "Đang hiệu lực",
+    "contractPendingSign": "Chờ ký",
+    "contractExpiring": "Sắp hết hạn (30 ngày)",
+    "contractExpired": "Đã hết hạn",
+
+    "attendanceTitle": "Chấm công trong kỳ",
+    "attendanceSubtitle": "Tỷ lệ có mặt / đi muộn theo khoảng đã chọn",
+    "attendanceOnTime": "Đúng giờ",
+    "attendanceLate": "Đi muộn",
+    "attendanceAbsent": "Vắng",
+    "attendanceLeave": "Nghỉ",
+
+    "genderTitle": "Cơ cấu giới tính",
+    "genderSubtitle": "Nhân sự đang hoạt động",
+    "male": "Nam",
+    "female": "Nữ",
+    "other": "Khác",
+
+    "leaveTitle": "Nghỉ phép trong kỳ",
+    "leaveSubtitle": "Theo trạng thái duyệt",
+    "leavePending": "Chờ duyệt",
+    "leaveApproved": "Đã duyệt",
+    "leaveRejected": "Từ chối",
+    "leaveCancelled": "Đã hủy",
+
+    "hireTitle": "Tuyển mới theo tháng",
+    "hireSubtitle": "Trong khoảng đã chọn",
+
+    "growthTitle": "Tăng trưởng nhân sự",
+    "growthSubtitle": "Headcount lũy kế theo năm",
+
+    "deptTitle": "Nhân sự theo phòng ban",
+    "deptSubtitle": "Top 10 phòng ban",
+    "deptUnassigned": "Chưa gán phòng ban",
+
+    "quickTitle": "Truy cập nhanh",
+    "quickSubtitle": "Các module thường dùng",
+    "quickEmployee": "Nhân viên",
+    "quickTimekeeping": "Chấm công",
+    "quickLeave": "Nghỉ phép",
+    "quickContract": "Hợp đồng",
+    "quickPayroll": "Bảng lương",
+    "quickAccess": "Phân quyền"
+  }
+}

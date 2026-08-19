@@ -1,0 +1,18 @@
+{
+  "warehouse": {
+    "title": "Quản lý kho",
+    "code": "Mã kho",
+    "name": "Tên kho",
+    "address": "Địa chỉ",
+    "manager": "Thủ kho / Người quản lý",
+    "capacity": "Sức chứa (m³)",
+    "status": "Trạng thái",
+    "statusActive": "Đang hoạt động",
+    "statusInactive": "Tạm dừng",
+    "statusFull": "Đầy kho",
+    "addWarehouse": "Thêm kho mới",
+    "editWarehouse": "Chỉnh sửa kho",
+    "deleteWarehouse": "Xóa kho",
+    "searchPlaceholder": "Tìm theo mã kho, tên kho, địa chỉ..."
+  }
+}

@@ -1,0 +1,273 @@
+@use './variables';
+@use './transitions';
+
+/* Global Reset & Base Typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--foreground);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Utility Classes */
+.cursor-pointer { cursor: pointer; }
+.select-none { user-select: none; }
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.flex-1 { flex: 1 1 0%; }
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+
+/* Glassmorphism Classes */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-effect {
+  background: rgba(18, 18, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Ant Design Global Overrides */
+.ant-layout {
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+}
+
+.ant-card {
+  background: var(--background-card) !important;
+  border-color: var(--border) !important;
+  color: var(--foreground) !important;
+  border-radius: var(--radius-lg) !important;
+  transition: all 0.2s ease;
+}
+
+.ant-card-head {
+  border-bottom-color: var(--border) !important;
+  color: var(--foreground) !important;
+}
+
+.ant-table {
+  background: var(--background-card) !important;
+  color: var(--foreground) !important;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--muted) !important;
+  color: var(--foreground) !important;
+  border-bottom-color: var(--border) !important;
+  font-weight: 600 !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom-color: var(--border) !important;
+  color: var(--foreground) !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: var(--background-hover) !important;
+}
+
+/* Drawer Global Overrides */
+.ant-drawer-content {
+  background-color: var(--background-card, #ffffff) !important;
+  color: var(--foreground) !important;
+}
+.ant-drawer-header {
+  background-color: var(--background-card, #ffffff) !important;
+  border-bottom-color: var(--border) !important;
+}
+.ant-drawer-body {
+  background-color: var(--background-card, #ffffff) !important;
+  color: var(--foreground) !important;
+}
+
+.config-setting-drawer .ant-drawer-content,
+.config-setting-drawer .ant-drawer-body {
+  background-color: var(--background-card, #ffffff) !important;
+}
+
+/* Dark Mode Ant Design Enhancements */
+.dark .ant-menu {
+  background: transparent !important;
+  color: var(--foreground) !important;
+}
+.dark .ant-menu-item-selected {
+  background-color: var(--primary-muted) !important;
+  color: var(--primary) !important;
+}
+.dark .ant-input,
+.dark .ant-input-affix-wrapper,
+.dark .ant-select-selector,
+.dark .ant-picker {
+  background-color: var(--background-elevated) !important;
+  border-color: var(--border) !important;
+  color: var(--foreground) !important;
+}
+.dark .ant-dropdown-menu,
+.dark .ant-select-dropdown,
+.dark .ant-picker-dropdown {
+  background-color: var(--background-card) !important;
+  border: 1px solid var(--border) !important;
+}
+.dark .ant-modal-content {
+  background-color: var(--background-card) !important;
+  color: var(--foreground) !important;
+  border: 1px solid var(--border) !important;
+}
+.dark .ant-modal-header {
+  background-color: var(--background-card) !important;
+  border-bottom-color: var(--border) !important;
+}
+.dark .ant-drawer-content,
+.dark .ant-drawer-body,
+.dark .config-setting-drawer .ant-drawer-content,
+.dark .config-setting-drawer .ant-drawer-body {
+  background-color: #141414 !important;
+  color: #f5f5f7 !important;
+}
+.dark .ant-drawer-header {
+  background-color: #141414 !important;
+  border-bottom-color: var(--border) !important;
+}
+
+/* ==========================================================================
+   THEME TRANSITION CIRCULAR RIPPLE EFFECT
+   ========================================================================== */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 999999;
+}
+.dark::view-transition-old(root) {
+  z-index: 999999;
+}
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+.theme-circle-ripple-wave {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  animation: theme-ripple-wave-grow 0.65s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes theme-ripple-wave-grow {
+  0% {
+    width: 36px;
+    height: 36px;
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+  18% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  75% {
+    width: var(--max-radius);
+    height: var(--max-radius);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    width: var(--max-radius);
+    height: var(--max-radius);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ==========================================================================
+   NPROGRESS CUSTOM STYLES
+   ========================================================================== */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: var(--primary, #1890ff);
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  box-shadow: 0 0 10px var(--primary, #1890ff), 0 0 5px var(--primary, #1890ff);
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px var(--primary, #1890ff), 0 0 5px var(--primary, #1890ff);
+  opacity: 1;
+  transform: rotate(3deg) translate(0px, -4px);
+}
+

@@ -1,0 +1,22 @@
+{
+  "inventory": {
+    "title": "Quản lý tồn kho",
+    "sku": "Mã SKU",
+    "productName": "Tên sản phẩm",
+    "category": "Danh mục",
+    "warehouse": "Kho lưu trữ",
+    "location": "Vị trí / Kệ",
+    "quantity": "Số lượng tồn",
+    "unit": "Đơn vị",
+    "minStock": "Tồn tối thiểu",
+    "maxStock": "Tồn tối đa",
+    "status": "Tình trạng",
+    "inStock": "Còn hàng",
+    "lowStock": "Sắp hết hàng",
+    "outOfStock": "Hết hàng",
+    "overStock": "Vượt mức",
+    "importExcel": "Nhập từ Excel",
+    "exportExcel": "Xuất Excel",
+    "adjustStock": "Điều chỉnh tồn"
+  }
+}

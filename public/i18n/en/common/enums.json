@@ -1,0 +1,398 @@
+{
+  "enums": {
+    "notAvailable": "N/A",
+    "statusFilter": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "all": "All"
+    },
+    "yesNoFilter": {
+      "yes": "Yes",
+      "no": "No",
+      "all": "All"
+    },
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "daysOfWeek": {
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    },
+    "month": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "actionType": {
+      "create": "Create",
+      "approve": "Approve",
+      "activate": "Activate",
+      "login": "Login",
+      "update": "Update",
+      "edit": "Edit",
+      "delete": "Delete",
+      "reject": "Reject",
+      "cancel": "Cancel",
+      "deactivate": "Deactivate",
+      "logout": "Logout",
+      "sync": "Sync",
+      "sendApprove": "Submit for approval",
+      "restore": "Restore",
+      "register": "Register",
+      "importExcel": "Import Excel",
+      "uploadFile": "Upload file",
+      "lock": "Lock",
+      "unlock": "Unlock"
+    },
+    "employeeLevel": {
+      "internship": "Internship",
+      "fresher": "Fresher",
+      "junior": "Junior",
+      "middle": "Middle",
+      "senior": "Senior",
+      "leader": "Leader",
+      "manager": "Manager",
+      "director": "Director",
+      "executive": "Executive"
+    },
+    "workingMode": {
+      "onSite": "On-site",
+      "remote": "Remote",
+      "hybrid": "Hybrid",
+      "flexible": "Flexible",
+      "businessTrip": "Business trip"
+    },
+    "paymentMethod": {
+      "bankTransfer": "Bank transfer",
+      "cash": "Cash",
+      "other": "Other"
+    },
+    "currency": {
+      "vnd": "VND",
+      "usd": "USD"
+    },
+    "contractType": {
+      "probation": "Probation",
+      "indefinite": "Indefinite term",
+      "definite": "Definite term",
+      "seasonal": "Seasonal",
+      "collaborator": "Collaborator",
+      "internship": "Internship"
+    },
+    "workStatus": {
+      "working": "Working",
+      "probation": "Probation",
+      "official": "Official",
+      "onLeave": "On leave",
+      "suspended": "Suspended",
+      "resigned": "Resigned",
+      "retired": "Retired"
+    },
+    "dayOffConfigType": {
+      "annual": "Annual leave",
+      "sick": "Sick leave",
+      "unpaid": "Unpaid leave",
+      "maternity": "Maternity leave",
+      "paternity": "Paternity leave",
+      "other": "Other"
+    },
+    "contractStatus": {
+      "draft": "Draft",
+      "pendingSign": "Pending sign",
+      "active": "Active",
+      "expiringSoon": "Expiring soon",
+      "expired": "Expired",
+      "terminated": "Terminated",
+      "liquidated": "Liquidated"
+    },
+    "salaryStatus": {
+      "draft": "Draft",
+      "processing": "Processing",
+      "approved": "Approved",
+      "paid": "Paid",
+      "cancelled": "Cancelled"
+    },
+    "slipStatus": {
+      "draft": "Draft",
+      "pending": "Pending",
+      "approved": "Approved",
+      "applied": "Applied",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "slipKind": {
+      "deduction": "Deduction",
+      "addition": "Addition"
+    },
+    "salaryItemType": {
+      "income": "Income",
+      "deduction": "Deduction"
+    },
+    "deductionSlipType": {
+      "fine": "Fine",
+      "compensation": "Compensation",
+      "other": "Other"
+    },
+    "additionSlipType": {
+      "bonus": "Bonus",
+      "support": "Support",
+      "other": "Other"
+    },
+    "userType": {
+      "admin": "Admin",
+      "hr": "HR",
+      "manager": "Manager",
+      "employee": "Employee"
+    },
+    "punchType": {
+      "in": "In",
+      "out": "Out",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out"
+    },
+    "leaveCalendarEventType": {
+      "leave": "Leave",
+      "holiday": "Holiday"
+    },
+    "attendanceScheduleSource": {
+      "dayOverride": "Day override",
+      "workPattern": "Work pattern",
+      "position": "Position"
+    },
+    "currencyCode": {
+      "vnd": "VND",
+      "usd": "USD"
+    },
+    "reviewRenewalStatus": {
+      "pendingReview": "Pending review",
+      "pendingApproval": "Pending approval",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "applied": "Applied"
+    },
+    "reviewRecommendation": {
+      "renew": "Renew",
+      "convert": "Convert type",
+      "increaseSalary": "Increase salary",
+      "terminate": "Terminate",
+      "noChange": "No change"
+    },
+    "transferStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled",
+      "applied": "Applied"
+    },
+    "transferType": {
+      "internalTransfer": "Internal transfer",
+      "secondment": "Secondment",
+      "rotation": "Rotation",
+      "companyTransfer": "Company transfer",
+      "branchTransfer": "Branch transfer",
+      "promotion": "Promotion",
+      "demotion": "Demotion",
+      "dismissal": "Dismissal"
+    },
+    "attendanceStatus": {
+      "onTime": "On time",
+      "late": "Late",
+      "early": "Early leave",
+      "leave": "Leave",
+      "absent": "Absent",
+      "incomplete": "Incomplete"
+    },
+    "dayOffStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "attendanceComplaintStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "attendanceComplaintType": {
+      "forgotCheckIn": "Forgot check-in",
+      "forgotCheckOut": "Forgot check-out",
+      "forgotBoth": "Forgot both",
+      "wrongTime": "Wrong time",
+      "other": "Other"
+    },
+    "overtimeRequestStatus": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "overtimeType": {
+      "afterShift": "After shift",
+      "dayOff": "Day off",
+      "holiday": "Holiday"
+    },
+    "leaveSession": {
+      "full": "Full day",
+      "am": "Morning",
+      "pm": "Afternoon"
+    },
+    "dataScope": {
+      "all": "All",
+      "company": "Company",
+      "branch": "Branch",
+      "department": "Department",
+      "part": "Part",
+      "own": "Own"
+    },
+    "recruitmentRequestStatus": {
+      "draft": "Draft",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "closed": "Closed"
+    },
+    "recruitmentRequestLevel": {
+      "company": "Company",
+      "branch": "Branch",
+      "department": "Department",
+      "part": "Part"
+    },
+    "hiringPlanStatus": {
+      "draft": "Draft",
+      "open": "Open",
+      "closed": "Closed",
+      "cancelled": "Cancelled"
+    },
+    "candidateStatus": {
+      "new": "New",
+      "screening": "Screening",
+      "interview": "Interview",
+      "waitlist": "Waitlist",
+      "offer": "Offer",
+      "hired": "Hired",
+      "rejected": "Rejected",
+      "withdrawn": "Withdrawn"
+    },
+    "interviewStatus": {
+      "scheduled": "Scheduled",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "noShow": "No show"
+    },
+    "hiringSourceChannel": {
+      "referral": "Employee referral",
+      "email": "HR email",
+      "careersSite": "Careers site",
+      "jobboard": "Job board",
+      "social": "Social media",
+      "agency": "Headhunter / Agency",
+      "walkIn": "Walk-in",
+      "other": "Other"
+    },
+    "violationSeverity": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "violationStatus": {
+      "draft": "Draft",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled"
+    },
+    "penaltyType": {
+      "warning": "Verbal warning",
+      "writtenWarning": "Written warning",
+      "fine": "Fine",
+      "suspension": "Suspension",
+      "termination": "Termination",
+      "none": "None"
+    },
+    "reviewCycleStatus": {
+      "draft": "Draft",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "trainingCourseStatus": {
+      "draft": "Draft",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "trainingEnrollmentStatus": {
+      "enrolled": "Enrolled",
+      "completed": "Completed",
+      "dropped": "Dropped"
+    },
+    "performance360ReviewerType": {
+      "self": "Self",
+      "peer": "Peer",
+      "manager": "Manager"
+    },
+    "performance360Status": {
+      "draft": "Draft",
+      "submitted": "Submitted"
+    },
+    "trainingQuizOption": {
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "assetStatus": {
+      "available": "Available",
+      "assigned": "Assigned",
+      "maintenance": "Maintenance",
+      "retired": "Retired",
+      "lost": "Lost",
+      "disposed": "Disposed"
+    },
+    "assetTicketType": {
+      "issue": "Issue",
+      "return": "Return",
+      "repair": "Repair",
+      "transfer": "Transfer"
+    },
+    "assetTicketStatus": {
+      "draft": "Draft",
+      "done": "Done",
+      "cancelled": "Cancelled"
+    },
+    "workflowEntityType": {
+      "leave": "Leave",
+      "ot": "Overtime",
+      "transfer": "Transfer",
+      "discipline": "Discipline",
+      "recruitmentRequest": "Recruitment request",
+      "complaint": "Attendance complaint"
+    },
+    "workflowApproverResolver": {
+      "manager": "Manager",
+      "hr": "HR",
+      "role": "Role"
+    },
+    "workflowInstanceStatus": {
+      "running": "Running",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    }
+  }
+}

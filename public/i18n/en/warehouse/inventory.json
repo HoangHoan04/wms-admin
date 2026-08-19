@@ -1,0 +1,22 @@
+{
+  "inventory": {
+    "title": "Inventory Management",
+    "sku": "SKU Code",
+    "productName": "Product Name",
+    "category": "Category",
+    "warehouse": "Warehouse",
+    "location": "Location / Bin",
+    "quantity": "Stock Quantity",
+    "unit": "Unit",
+    "minStock": "Min Stock",
+    "maxStock": "Max Stock",
+    "status": "Status",
+    "inStock": "In Stock",
+    "lowStock": "Low Stock",
+    "outOfStock": "Out of Stock",
+    "overStock": "Overstocked",
+    "importExcel": "Import Excel",
+    "exportExcel": "Export Excel",
+    "adjustStock": "Adjust Stock"
+  }
+}

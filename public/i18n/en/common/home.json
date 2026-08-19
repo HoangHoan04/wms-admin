@@ -1,0 +1,73 @@
+﻿{
+  "home": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "title": "HR dashboard",
+    "dateRangeLabel": "Date range",
+    "fromDate": "From date",
+    "toDate": "To date",
+    "loadFailed": "Failed to load dashboard",
+
+    "kpiTotalEmployees": "Total employees",
+    "kpiFemale": "Female employees",
+    "kpiMale": "Male employees",
+    "kpiNewHires": "New hires in period",
+    "kpiActiveHint": "Active",
+    "kpiPercentOfTotal": "{{percent}}% of total",
+    "kpiPrevPeriod": "Previous period: {{count}}",
+
+    "pendingTitle": "Pending actions",
+    "pendingSubtitle": "Requests awaiting approval",
+    "pendingLeave": "Leave requests",
+    "pendingComplaint": "Attendance complaints",
+    "pendingTransfer": "Transfers",
+    "pendingReview": "Contract reviews",
+
+    "contractTitle": "Contracts",
+    "contractSubtitle": "Current contract status",
+    "contractActive": "Active",
+    "contractPendingSign": "Pending signature",
+    "contractExpiring": "Expiring (30 days)",
+    "contractExpired": "Expired",
+
+    "attendanceTitle": "Attendance in period",
+    "attendanceSubtitle": "Presence / late rate for selected range",
+    "attendanceOnTime": "On time",
+    "attendanceLate": "Late",
+    "attendanceAbsent": "Absent",
+    "attendanceLeave": "On leave",
+
+    "genderTitle": "Gender breakdown",
+    "genderSubtitle": "Active workforce",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+
+    "leaveTitle": "Leave in period",
+    "leaveSubtitle": "By approval status",
+    "leavePending": "Pending",
+    "leaveApproved": "Approved",
+    "leaveRejected": "Rejected",
+    "leaveCancelled": "Cancelled",
+
+    "hireTitle": "New hires by month",
+    "hireSubtitle": "Within selected range",
+
+    "growthTitle": "Headcount growth",
+    "growthSubtitle": "Cumulative headcount by year",
+
+    "deptTitle": "Headcount by department",
+    "deptSubtitle": "Top 10 departments",
+    "deptUnassigned": "Unassigned department",
+
+    "quickTitle": "Quick access",
+    "quickSubtitle": "Frequently used modules",
+    "quickEmployee": "Employees",
+    "quickTimekeeping": "Timekeeping",
+    "quickLeave": "Leave",
+    "quickContract": "Contracts",
+    "quickPayroll": "Payroll",
+    "quickAccess": "Access control"
+  }
+}

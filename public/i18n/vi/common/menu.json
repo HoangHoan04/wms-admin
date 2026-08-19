@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "home": "Trang chủ",
+    "dashboard": "Trang chủ",
+    "warehouse": "Quản lý kho",
+    "warehouseList": "Danh sách kho",
+    "location": "Sơ đồ & Vị trí kệ",
+    "inventory": "Quản lý tồn kho",
+    "stockList": "Tra cứu tồn kho",
+    "inbound": "Quản lý nhập kho",
+    "outbound": "Quản lý xuất kho",
+    "stockTransfer": "Chuyển kho nội bộ",
+    "stockAudit": "Kiểm kê kho",
+    "reports": "Báo cáo thống kê",
+    "system": "Quản trị hệ thống",
+    "users": "Quản lý người dùng",
+    "roles": "Phân quyền vai trò",
+    "settings": "Cấu hình hệ thống",
+    "logs": "Nhật ký hoạt động"
+  }
+}

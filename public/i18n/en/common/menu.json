@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "warehouse": "Warehouse",
+    "warehouseList": "Warehouse List",
+    "location": "Locations & Bins",
+    "inventory": "Inventory",
+    "stockList": "Stock Lookup",
+    "inbound": "Goods Inbound",
+    "outbound": "Goods Outbound",
+    "stockTransfer": "Internal Transfer",
+    "stockAudit": "Stock Audit",
+    "reports": "Reports & Analytics",
+    "system": "System Administration",
+    "users": "User Management",
+    "roles": "Role & Permissions",
+    "settings": "System Settings",
+    "logs": "Action Logs"
+  }
+}
